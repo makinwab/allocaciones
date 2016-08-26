@@ -1,1 +1,6 @@
+# Byte-compiled files
 *.pyc
+
+# Coverage
+htmlcov
+.coverage
