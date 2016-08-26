@@ -16,7 +16,6 @@ class TestAmityModel(unittest.TestCase):
     def get_input(self):
         return "create_room ib lagos"
 
-
     """
         Verify is instance of Class is valid
     """
