@@ -1,0 +1,2 @@
+class Amity(object):
+    pass

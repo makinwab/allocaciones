@@ -1,0 +1,2 @@
+class Office(object):
+    pass

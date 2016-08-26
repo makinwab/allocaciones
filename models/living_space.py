@@ -1,0 +1,2 @@
+class LivingSpace(object):
+    pass
