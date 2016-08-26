@@ -1,2 +1,2 @@
-class LivingSpace(object):
+class LivingSpace(Room):
     pass

@@ -1,2 +1,2 @@
-class Office(object):
+class Office(Room):
     pass
