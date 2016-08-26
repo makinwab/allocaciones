@@ -1,4 +1,6 @@
 from room import Room
 
 class Office(Room):
-    pass
+
+    # can accomodate
+    max_spaces = 6

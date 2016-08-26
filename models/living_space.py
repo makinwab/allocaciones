@@ -1,4 +1,6 @@
 from room import Room
 
 class LivingSpace(Room):
-    pass
+
+    #can accomodate
+    max_spaces = 4

@@ -1,6 +1,10 @@
 # Byte-compiled files
 *.pyc
 
+*.DS_Store
+
+*.cache/
+
 # Coverage
 htmlcov
 .coverage

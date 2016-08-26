@@ -1,2 +1,6 @@
 class Amity(object):
-    pass
+
+    rooms = []
+
+    def __init__(self):
+        print "Welcome to Amity"
