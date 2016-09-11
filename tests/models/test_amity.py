@@ -1,5 +1,5 @@
 import unittest
-from models.amity import Amity
+from allocations.models.amity import Amity
 
 class TestAmityModel(unittest.TestCase):
 
@@ -7,24 +7,21 @@ class TestAmityModel(unittest.TestCase):
     Test case for Amity model
     """
 
-    """
-        Set up test data
-    """
     def setUp(self):
         self.hostel = Amity()
 
     def get_input(self):
-        return "create_room ib lagos"
+        return "create_room OFFICE lagos"
 
-    """
-        Verify is instance of Class is valid
-    """
     def test_instance_is_valid(self):
         self.assertIsInstance(self.hostel, Amity, "Invalid instance")
 
-    """
-        Verify create_room creates a list of rooms
-    """
     def test_create_method_populates_rooms(self):
-        self.hostel.create_room(["oyo", "ib", "lagos"])
-        self.assertEqual(["oyo", "ib", "lagos"], self.hostel.rooms)
+        self.hostel.create_room(["office", "ib", "lagos"])
+        self.assertEqual(["ib", "lagos"], self.hostel.office.rooms)
+
+    def test_add_person_creates_person_and_allocates_room(self):
+        self.hostel.add_person(["bukky", "fellow", "Y"])
+        self.assertEqual("bukky", self.hostel.person.name)
+        self.assertEqual("FELLOW", self.hostel.person.role)
+        self.assertEqual("Y", self.hostel.person.accommodation)
