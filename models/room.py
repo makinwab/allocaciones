@@ -2,12 +2,22 @@ from random import randint
 
 class Room(object):
 
-    def __init__(self):
-        self.rooms = None
+    rooms = {
+        "office": [],
+        "livingspace": []
+    }
 
     def create(self, data):
-        self.rooms = data[1:]
+        existing_rooms = self.rooms[data[0]]
+        self.rooms[data[0]] = existing_rooms + data[1:]
+        #print self.rooms
+        return self.rooms
 
-    def allocate(self, person):
+    @classmethod
+    def allocate(cls, person):
+        self = cls()
+        if self.rooms == None:
+            print "No rooms have been created"
+            return
         number = randint(0,len(self.rooms))
-        print self.rooms[number]
+        print self.rooms["livingspace"][number]
