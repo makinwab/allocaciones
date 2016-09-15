@@ -1,5 +1,3 @@
-from random import randint
-
 class Room(object):
 
     rooms = {
@@ -12,12 +10,3 @@ class Room(object):
         self.rooms[data[0]] = existing_rooms + data[1:]
         #print self.rooms
         return self.rooms
-
-    @classmethod
-    def allocate(cls, person):
-        self = cls()
-        if self.rooms == None:
-            print "No rooms have been created"
-            return
-        number = randint(0,len(self.rooms))
-        print self.rooms["livingspace"][number]
