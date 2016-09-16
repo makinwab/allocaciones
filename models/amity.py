@@ -54,6 +54,7 @@ class Amity(object):
             self.fellow.allocate_room(self.office, self.livingspace)
         else:
             self.staff.add(person_details)
+            self.staff.allocate_room(self.office)
 
 if __name__ == '__main__':
     amity = Amity()
