@@ -9,7 +9,7 @@ from fellow import Fellow
 class Amity(object):
 
     def __init__(self):
-        print "Welcome to Amity\n"
+        print("Welcome to Amity\n")
         self.office = Office()
         self.livingspace = LivingSpace()
         self.staff = Staff()
