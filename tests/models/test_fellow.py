@@ -1,5 +1,5 @@
 import unittest
-from models.fellow import Fellow
+from allocations.models.fellow import Fellow
 
 class TestFellowModel(unittest.TestCase):
 

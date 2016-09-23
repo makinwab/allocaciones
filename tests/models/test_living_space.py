@@ -1,6 +1,6 @@
 import unittest
-from models.room import Room
-from models.living_space import LivingSpace
+from allocations.models.room import Room
+from allocations.models.living_space import LivingSpace
 
 class TestLivingSpaceModel(unittest.TestCase):
 

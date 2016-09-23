@@ -1,8 +1,8 @@
 import unittest
-from models.person import Person
+from allocations.models.person import Person
 
 class TestPersonModel(unittest.TestCase):
-    
+
     #test set up
     def setUp(self):
         print ("Setting Up")

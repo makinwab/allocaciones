@@ -1,5 +1,5 @@
 import unittest
-from models.staff import Staff
+from allocations.models.staff import Staff
 
 class TestStaffModel(unittest.TestCase):
 

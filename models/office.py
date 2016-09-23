@@ -4,7 +4,7 @@ from random import randint
 class Office(Room):
 
     # can accomodate
-    max_spaces = 1
+    max_spaces = 6
     spaces = []
     occupied = {}
 

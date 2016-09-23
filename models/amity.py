@@ -43,7 +43,7 @@ class Amity(object):
 
     """
     add_person bukky FELLOW Y
-    add_person jay STAFF
+    add_person tosin STAFF
     """
     def add_person(self, person_details):
         if len(person_details) == 2:

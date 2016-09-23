@@ -1,5 +1,5 @@
 import unittest
-from models.room import Room
+from allocations.models.room import Room
 
 class TestRoomModel(unittest.TestCase):
 
